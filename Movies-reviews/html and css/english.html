@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://c8.alamy.com/comp/G3X2FP/movie-reviews-isolated-on-premium-black-round-button-abstract-illustration-G3X2FP.jpg" />
+    <title>Movies reviews</title>
+    <style>
+               body{
+            margin:0;
+        }
+        .heading{
+    text-align: center;
+    background-image: url(https://thumbs.dreamstime.com/z/movie-reviews-special-blue-banner-background-isolated-abstract-illustration-127876122.jpg);
+    padding: 12px;
+}
+.heading h1{
+    font-size: 30px;
+    color: aliceblue;
+}
+.flex-container{
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;
+    background-color: #393844;;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+.lan , a{
+    text-decoration: none; 
+    color: aliceblue;
+    padding: 9px ;
+}
+.search {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+.lan {
+    margin: 0 10px;
+}
+.fa-search {
+    margin-left: -25px;
+    color: gray;
+    cursor: pointer;
+}
+button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.lan a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+        h1{
+            
+            background-image: url("back.png");
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+            color:aliceblue;
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            font-style:italic;
+        }
+        .grid-layout{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row: auto auto ;
+            border: 1px solid rgb(189, 179, 179);
+            margin-top: 20px;
+    
+
+        }     
+        .movie-card {
+            display: flex;
+            background-color:aliceblue;
+            padding: 15px;
+            width: 472px;
+            border: 1px solid rgb(237, 233, 233);
+
+        }
+        .movie-card:hover{
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+            transform: scale(1.05) translateY(-5px);
+        }
+  
+        .movie-card img {
+            width: 150px;
+            border-radius: 12px;
+            margin-right: 15px;
+
+        }
+  
+        .movie-details h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            line-height: 1.5;
+        }
+  
+        .movie-details p {
+            margin: 5px 0 ;
+            font-size: 14px;
+            color: #0a0a0a;
+            line-height: 1.5;
+        }
+        .movie-details a {
+            margin: 0;
+            font-size: 14px;
+            color: #0c0c0c;
+            line-height: 1.5;
+            text-decoration: none;
+            flex-wrap: wrap;
+        }
+        .movie-details p{
+            font-size: 16px;
+        }
+
+        .movie-details a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        .movie-card:hover{
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        English Movies
+    </h1>
+    <div class="flex-container">
+        <div class="lan">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="lan">
+            <a href="tamil.html">Tamil</a>
+        </div>
+        <div class="lan">
+            <a href="english.html">English</a>
+        </div>
+        <div class="lan">
+            <a href="malayalam.html">Malayalam</a>
+        </div>
+        <div class="lan">
+            <input type="search" placeholder="search" class="search"> 
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="lan">
+            <button>Login</button>
+        </div>
+    </div>
+    <div class="grid-layout">
+    <div class="movie-card">
+        <a href="Eenie.html" target="_blank"><img src="english2.jpg" alt="Movie Poster" title="Eenie Meanie"></a>
+        <div class="movie-details">
+            <h2>Eenie Meanie</h2>
+            <a href="https://timesofindia.indiatimes.com/topic/Samara-Weaving" target="_blank">Samara Weaving,</a>
+            <a href="https://timesofindia.indiatimes.com/topic/Karl-Glusman" target="_blank">Karl Glusman ,</a>
+            <a href="https://timesofindia.indiatimes.com/topic/Andy-Garcia" target="_blank">Andy Garcia,</a>
+            <a href="https://timesofindia.indiatimes.com/topic/jermaine-fowler" target="_blank">jermaine fowler</a>
+            <p class="con">Critic's Rating: ⭐⭐⭐☆☆ 3.0</p>
+            <p class="con">Avg. Users' Rating: ⭐⭐⭐☆☆ 3.0</p>
+            <p class="con">English</p>
+            <p class="con">Action, Comedy, Thriller</p>
+            <p class="con">22 Aug 2025 | 1 hr 46 mins</p> 
+        </div>
+    </div>
+    <div class="movie-card">
+        <a href="https://www.youtube.com/results?search_query=odum+kuthira+chadum+kuthira+trailer" target="_blank"><img src="english3.jpg"  alt="Movie Poster" title="Nobody 2"></a>
+        <div class="movie-details">
+            <h2>Nobody 2</h2>
+            <a href="https://timesofindia.indiatimes.com/topic/Bob-Odenkirk" target="_blank">Bob Odenkirk</a>
+            <a href="https://timesofindia.indiatimes.com/topic/Connie-Nielsen" target="_blank">Connie Nielsen ,</a>
+            <a href="https://timesofindia.indiatimes.com/topic/John-Ortiz" target="_blank">John Ortiz,</a>
+            <a href="https://timesofindia.indiatimes.com/topic/Christopher-Lloyd" target="_blank">Christopher Lloyd</a>
+            <p class="con">Critic's Rating:⭐⭐⭐☆☆ 3.0</p>
+            <p class="con">Avg. Users' Rating: ⭐⭐⭐☆☆ 3.0</p>
+            <p class="con">English</p>
+            <p class="con">Comedy, Action, Thriller | A</p>
+            <p class="con">22 Aug 2025 | 1 hr 30 mins</p>
+        </div>
+    </div>
+    <div class="movie-card">
+        <a href="https://www.youtube.com/results?search_query=odum+kuthira+chadum+kuthira+trailer" target="_blank"><img src="english1.jpg"  alt="Movie Poster" title="The Thursday Murder Club"></a>
+        <div class="movie-details">
+            <h2>The Thursday Murder Club</h2>
+            <a href="https://timesofindia.indiatimes.com/topic/Helen-Mirren" target="_blank">Helen Mirren</a>
+            <a href="https://timesofindia.indiatimes.com/topic/Pierce-Brosnan" target="_blank">Pierce Brosnan,</a>
+            <a href="https://timesofindia.indiatimes.com/topic/Celia-Imrie" target="_blank">Celia Imrie</a>
+            <a href="https://timesofindia.indiatimes.com/topic/Ben-Kingsley" target="_blank">Ben Kingsley</a>
+            <p class="con">Critic's Rating: ⭐⭐⭐☆☆ 3.0</p>
+            <p class="con">Avg. Users' Rating:⭐⭐⭐☆☆ 3.0</p>
+            <p class="con">English</p>
+            <p class="con">Horror, Thriller | UA</p>
+            <p class="con">29 Aug 2025 | 1 hr 42 mins</p>
+        </div>
+    </div>
+        <div class="movie-card">
+            <a href="fantatic.html" target="_blank"><img src="fan.png"  alt="Movie Poster" title="The Fantastic Four: First Steps"></a>
+            <div class="movie-details">
+                <h2>The Fantastic Four: First Steps</h2>
+                <a href="https://timesofindia.indiatimes.com/topic/Rajinikanth" target="_blank">Pedro Pascal</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Shruti-Haasan" target="_blank">Vanessa Kirby</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Shruti-Haasan" target="_blank">Julia Garner</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Nagarjuna-Akkineni" target="_blank">joseph quinn</a>
+                <p class="con">Critic's Rating: ⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Avg. Users' Rating:⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">English</p>
+                <p class="con">Action, Adventure, Sci-Fi | UA</p>
+                <p class="con">25 Jul 2025 | 1 hr 55 mins</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <a href="https://www.youtube.com/results?search_query=odum+kuthira+chadum+kuthira+trailer" target="_blank"><img src="happy.png"  alt="Movie Poster" title="Happy Gilmore 2"></a>
+            <div class="movie-details">
+                <h2>Happy Gilmore 2</h2>
+                <a href="https://timesofindia.indiatimes.com/topic/Yogi-Babu" target="_blank">Julie Bowen</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Devayani" target="_blank">Margaret Qualley</a>
+                <a href="https://timesofindia.indiatimes.com/topic/R.-Sarathkumar" target="_blank">Kyle Newacheck</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Siddharth" target="_blank">Christopher McDonald</a>
+                <p class="con">Critic's Rating: ⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Avg. Users' Rating:⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">English</p>
+                <p class="con">Comedy, Sport</p>
+                <p class="con">25 Jul 2025 | 1 hr 40 mins</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <a href="https://www.youtube.com/results?search_query=odum+kuthira+chadum+kuthira+trailer" target="_blank"><img src="bring.png"  alt="Movie Poster" title="Bring Her Back"></a>
+            <div class="movie-details">
+                <h2>Bring Her Back</h2>
+                <a href="https://timesofindia.indiatimes.com/topic/saanve-megghana" target="_blank">billy barratt,</a>
+                <a href="https://timesofindia.indiatimes.com/topic/manikandan-k." target="_blank">Sally Hawkins</a>
+                <a href="https://timesofindia.indiatimes.com/topic/R.-Sundarrajan" target="_blank">danny philippou</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Guru-Somasundaram" target="_blank">michael philippou</a>
+                <p class="con">Critic's Rating: ⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Avg. Users' Rating:⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">English</p>
+                <p class="con">Horror, Thriller | A</p>
+                <p class="con">22 Aug 2025 | 1 hr 46 mins</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

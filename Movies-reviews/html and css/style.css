@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+.heading{
+    text-align: center;
+    background-image: url(https://thumbs.dreamstime.com/z/movie-reviews-special-blue-banner-background-isolated-abstract-illustration-127876122.jpg);
+    padding: 12px;
+}
+
+.search {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+.lan {
+    margin: 0 10px;
+}
+.fa-search {
+    margin-left: -25px;
+    color: gray;
+    cursor: pointer;
+}
+button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.heading h1{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+ .flex-container {
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;
+    background-color: #393844;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+.lan , a{
+    text-decoration: none; 
+    color: aliceblue;
+    padding: 9px ;
+}
+.lan a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.subheading{
+    background-color: aliceblue;
+    padding: 1px 0px 1px 20px ;
+    font-size: 12px;
+    border: 1px solid rgb(211, 206, 206);
+}
+.grid-layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto auto ;
+    
+
+}     
+.movie-card {
+    display: flex;
+    background-color:aliceblue;
+    padding: 15px;
+    width: 472px;
+    border: 1px solid rgb(237, 233, 233);
+    margin-top: 1px;
+
+  }
+  
+  .movie-card img {
+    width: 150px;
+    border-radius: 12px;
+    margin-right: 15px;
+
+  }
+  
+  .movie-details h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.5;
+  }
+  
+  .movie-details p {
+    margin: 5px 0 ;
+    font-size: 14px;
+    color: #0a0a0a;
+    line-height: 1.5;
+  }
+  .movie-details a {
+    margin: 0;
+    font-size: 14px;
+    color: #0c0c0c;
+    line-height: 1.5;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+  .movie-details p{
+    font-size: 16px;
+  }
+
+ .movie-details a:hover{
+    color: blue;
+    text-decoration: underline;
+ }
+ .movie-card:hover{
+  
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+  transform: scale(1.05) translateY(-5px);
+ }

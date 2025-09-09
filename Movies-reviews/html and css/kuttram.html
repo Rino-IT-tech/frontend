@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            margin: 0;
+            background-color:aliceblue;
+        }
+        .head{
+            background-image: url("back.png");
+            padding: 30px;
+            margin: 0;
+            text-align: center;
+            color:aliceblue;
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            font-style:italic;
+        }
+        .flex1{
+            display: flex;
+            background-color:aliceblue;
+            padding: 15px;
+            max-width: 10000px;
+            border: 1px solid rgb(240, 236, 236);
+            margin: 0;
+            margin-left: 328px;
+            padding-right: 2px;
+            border-radius: 20px;
+            width: 1030px;
+            box-shadow: 0 6px 15px rgba(177, 175, 175, 0.467);
+            
+        }
+        .movies{
+            padding-right: 20px;
+        }
+        .movies p{
+            padding-left: 50px;
+            line-height: 2.0;
+            font-size: 16px;
+        }
+        .movies h1{
+            padding-left: 50px;
+        }
+        .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .aboud{
+        display: flex;
+        flex-direction: column;
+        background-color:aliceblue;
+        width: 1050px;
+        margin-left: 228px;
+        padding-left: 100px;
+        border-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        
+        
+    }
+    .about-para p{
+        border: 1px solid;
+        background-color: aliceblue;
+        padding: 30px;
+        width: 850px;
+        border-radius: 20px;
+        border-color: rgb(240, 236, 236);
+        box-shadow: 0 6px 15px rgba(177, 175, 175, 0.467);
+    } 
+    .flex2{
+        display: flex;
+        border: 1px solid rgb(240, 236, 236);
+        border-radius: 30px;
+        width:900px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-shadow: 0 6px 15px rgba(177, 175, 175, 0.467);
+
+    }
+    .flex3{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        
+    }
+    .flex3 img{
+        border-radius: 400px;
+        height: 150px;
+        width: 150px;
+    }
+    .review{
+        border: 1px solid rgb(240, 236, 236);
+        border-radius: 30px;
+        width:900px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        line-height: 30px;
+        box-shadow: 0 6px 15px rgba(177, 175, 175, 0.467);
+    }
+    .review p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .text-container{
+        width:900px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+         box-shadow: 0 6px 15px rgba(177, 175, 175, 0.467);
+         border-radius: 30px;
+    }
+    .text{
+        width: 900px;
+        height: 200px;
+        border-radius: 5px;
+        background-color: aliceblue;
+        
+    }
+    .video-container {
+      margin-top: 20px;
+      padding: 20px ;
+      border: 1px solid;
+      border-color:rgb(240, 236, 236);
+      width: 870px;
+      border-radius: 30px;
+      box-shadow: 0 6px 15px rgba(177, 175, 175, 0.467);
+    }
+    </style>
+</head>
+<body>
+    <h1 class="head">
+        Movie Review
+    </h1>
+    <div class="flex1">
+        <img src="https://static.toiimg.com/thumb/imgsize-132810,msid-123333652,width-600,resizemode-4/123333652.jpg" alt="poster">
+        <div class="movies">
+            <h1>Kuttram purithu</h1>
+            <p class="con">Critic's Rating: ⭐⭐☆☆☆ 2.0</p>
+            <p class="con">Avg. Users' Rating: ⭐⭐☆☆☆ 2.0</p>
+            <p class="con">Tamil</p>
+            <p class="con">Supernatural, Thriller | UA</p>
+            <p class="con">29 Aug 2025 | 2 hrs 2 mins</p>
+            <p><a href="#show" class="btn">▶ Watch Trailer</a></p>
+        </div>
+    </div>
+    <div class="aboud">
+        <h2>About The Movie</h2>
+        <div class="about-para">
+            <p>Kuttram Pudhithu wants to be a clean, clockwork mystery. It ends up a case file with too many sticky notes. Fewer tricks and more focus would have gone a long way.</p>
+        </div>
+        <div>
+            <h1>Cast</h1>
+        </div>
+        <div class="cast">
+            <div class="flex2">
+                <div class="flex3">
+                    <img src="https://static.toiimg.com/thumb/imgsize-191701,msid-123333195,width-168,resizemode-4/logo.jpg" alt="cast photo">
+                    <h2>seshvitha kanimozhi</h2>
+                </div>
+                <div class="flex3">
+                    <img src="https://static.toiimg.com/thumb/imgsize-,msid-61489445,width-168,resizemode-4/logo.jpg" alt="cast photo" class="niz">
+                    <h2>Nizhalgal Ravi</h2>
+                </div>
+                <div class="flex3">
+                    <img src="https://static.toiimg.com/thumb/imgsize-,msid-61409881,width-168,resizemode-4/logo.jpg" alt="cast photo">
+                    <h2>Madhusudhan Rao</h2>
+                </div>
+                <div class="flex3">
+                    <img src="https://static.toiimg.com/photo/121484538.cms" alt="cast photo">
+                    <h2>noah armstrong</h2>
+                </div>
+            </div>
+        </div>
+        <h2>Kuttram Pudhithu Movie Review: A whodunit without the whoa.</h2>
+        <div class="review">
+            <p ><b>Kuttram Pudhithu Movie Synopsis:</b> A delivery boy confesses to killing a top cop’s daughter, who then reappears, sending the case through a maze of false testimonies and staged recollections.<br><br>
+            <b>Kuttram Pudhithu Movie Review:</b> Kuttram Pudhithu starts with a sturdy hook. Preethi (Seshvitha), the assistant commissioner’s daughter, is reported murdered. After some initial questioning, Kathiresan (Tharun Vijay), a troubled delivery boy, turns himself in and narrates the crime in grisly detail. The supposed murder site is a room tied to a now-missing auto driver, who becomes the prime suspect. Then Preethi reappears, the investigation pivots, and the film positions itself as a what-really-happened puzzle.<br><br>
+            On paper, that should glide. On screen, it stutters. The staging feels stiff, the scene-to-scene rhythm halts and heaves, and the investigation never finds that propulsive hum a good whodunit needs. Interactions between the cops and Kathiresan often land oddly, like lines spoken a beat before the actors have fully entered the moment. The result is a film that keeps telling you it is twisting while you wait to feel the turn.<br><br>
+            The structure does not help. Suspect accounts arrive one after another, each with its own flashback, each later withdrawn. Instead of sowing doubt, the pattern teaches you to wait it out. You start counting installments rather than assembling possibilities. Red herrings are useful when they slip by; here they arrive waving flags.<br><br>
+            Sound becomes a separate obstacle. The background score swells over scenes that would be better left to breathe, and the wall-to-wall music ends up flattening tension rather than tightening it. A few staging choices compound the tonal wobble, including a sudden media scrum that materialises at the police station and a laboured explanation of concussion that chews time. Kollywood should stop bringing in "experts" to explain things in the middle of the film.<br><br>
+            There are glimmers. The central idea has legs, the runtime stays under two hours, and the film is committed to a plot-first approach with only a single song. Tharun Vijay’s Kathiresan has moments where his agitation hints at a better character study trapped inside the mechanics. Seshvitha sells her version of the narrative convincingly. The rest of the ensemble is functional.<br><br>
+            Kuttram Pudhithu wants to be a clean, clockwork mystery. It ends up a case file with too many sticky notes. Fewer tricks and more focus would have gone a long way.<br><br>
+            <b>Written By: </b><i> Abhinav Subramanian</i></p>
+        </div>
+        <h2>User reviews</h2>
+        <div class="text-container">
+            <textarea placeholder="Write your review here..." maxlength="1500" class="text"></textarea>
+
+        </div>
+        <h2>Watch Trailer</h2>
+        <div id="show" class="video-container">
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/_WBVs4lSL6k?si=x5jDYyaIOotkvhLf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          
+    </div>
+</body>
+</html>

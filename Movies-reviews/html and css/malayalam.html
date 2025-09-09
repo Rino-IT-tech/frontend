@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+               body{
+            margin:0;
+        }
+        .heading{
+    text-align: center;
+    background-image: url(https://thumbs.dreamstime.com/z/movie-reviews-special-blue-banner-background-isolated-abstract-illustration-127876122.jpg);
+    padding: 12px;
+}
+.heading h1{
+    font-size: 30px;
+    color: aliceblue;
+}
+.flex-container{
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;
+    background-color:  #393844;;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+.search {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+.lan {
+    margin: 0 10px;
+}
+.fa-search {
+    margin-left: -25px;
+    color: gray;
+    cursor: pointer;
+}
+button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.movie-card:hover{
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+            transform: scale(1.05) translateY(-5px);
+        }
+.lan , a{
+    text-decoration: none; 
+    color: aliceblue;
+    padding: 9px ;
+}
+.lan a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+        h1{
+            
+            background-image: url("back.png");
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+            color:aliceblue;
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            font-style:italic;
+        }
+        .grid-layout{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row: auto auto ;
+            border: 1px solid rgb(189, 179, 179);
+            margin-top: 20px;
+    
+
+        }     
+        .movie-card {
+            display: flex;
+            background-color:aliceblue;
+            padding: 15px;
+            width: 472px;
+            border: 1px solid rgb(237, 233, 233);
+
+        }
+  
+        .movie-card img {
+            width: 150px;
+            border-radius: 12px;
+            margin-right: 15px;
+
+        }
+  
+        .movie-details h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            line-height: 1.5;
+        }
+  
+        .movie-details p {
+            margin: 5px 0 ;
+            font-size: 14px;
+            color: #0a0a0a;
+            line-height: 1.5;
+        }
+        .movie-details a {
+            margin: 0;
+            font-size: 14px;
+            color: #0c0c0c;
+            line-height: 1.5;
+            text-decoration: none;
+            flex-wrap: wrap;
+        }
+        .movie-details p{
+            font-size: 16px;
+        }
+
+        .movie-details a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        .movie-card:hover{
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Malayalam Movies
+    </h1>
+    <div class="flex-container">
+        <div class="lan">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="lan">
+            <a href="tamil.html">Tamil</a>
+        </div>
+        <div class="lan">
+            <a href="english.html">English</a>
+        </div>
+        <div class="lan">
+            <a href="malayalam.html">Malayalam</a>
+        </div>
+        <div class="lan">
+            <input type="search" placeholder="search" class="search"> 
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="lan">
+            <button>Login</button>
+        </div>
+    </div>
+    <div class="grid-layout">
+        <div class="movie-card">
+            <a href="odum.html" target="_blank"><img src="mal1.jpg"  alt="Movie Poster" title="Odum Kuthira Chaadum Kuthira"></a>
+            <div class="movie-details">
+                <h2>Odum Kuthira Chaadum Kuthira</h2>
+                <a href="https://timesofindia.indiatimes.com/topic/Fahadh-Faasil" target="_blank">Fahadh Faasil,</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Kalyani-Priyadarshan" target="_blank">Kalyani Priyadarshan ,</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Lal" target="_blank">Lal,</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Althaf-Salim" target="_blank">Althaf Salim</a>
+                <p class="con">Critic's Rating: ⭐⭐☆☆☆ 2.0</p>
+                <p class="con">Avg. Users' Rating: ⭐⭐☆☆☆ 2.0</p>
+                <p class="con">Malayalam</p>
+                <p class="con">Comedy, Drama | UA</p>
+                <p class="con">29 Aug 2025 | 1 hr 42 mins</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <a href="https://www.youtube.com/results?search_query=odum+kuthira+chadum+kuthira+trailer" target="_blank"><img src="mal2.jpg"  alt="Movie Poster" title="Thalavara"></a>
+            <div class="movie-details">
+                <h2>Thalavara</h2>
+                <a href="https://timesofindia.indiatimes.com/topic/Arjun-Ashokan" target="_blank">Arjun Ashokan,</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Devadarshini" target="_blank">Devadarshini ,</a>
+                <a href="https://timesofindia.indiatimes.com/topic/revathy-sharma" target="_blank">revathy sharma,</a>
+                <a href="https://timesofindia.indiatimes.com/topic/sarath-sabha" target="_blank">sarath sabha</a>
+                <p class="con">Critic's Rating: ⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Avg. Users' Rating: ⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Malayalam</p>
+                <p class="con">Drama, Romance | U</p>
+                <p class="con">22 Aug 2025 | 2 hrs 1 mins</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <a href="https://www.youtube.com/results?search_query=odum+kuthira+chadum+kuthira+trailer" target="_blank"><img src="mal3.jpg"  alt="Movie Poster" title="Lokah Chapter 1: Chandra"></a>
+            <div class="movie-details">
+                <h2>Lokah Chapter 1: Chandra</h2>
+                <a href="https://timesofindia.indiatimes.com/topic/Kalyani-Priyadarshan" target="_blank">Kalyani Priyadarshan,</a>
+                <a href="https://timesofindia.indiatimes.com/topic/naslen-k-gafoor" target="_blank">naslen k gafoor,</a>
+                <a href="https://timesofindia.indiatimes.com/topic/sandy" target="_blank">sandy</a>
+                <a href="https://timesofindia.indiatimes.com/topic/nishanth-sagar" target="_blank">nishanth sagar</a>
+                <p class="con">Critic's Rating: ⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Avg. Users' Rating:⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Malayalam</p>
+                <p class="con">Horror, Thriller | UA</p>
+                <p class="con">29 Aug 2025 | 1 hr 42 mins</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <a href="https://www.youtube.com/results?search_query=odum+kuthira+chadum+kuthira+trailer" target="_blank"><img src="mal11.png"  alt="Movie Poster" title="Narivetta"></a>
+            <div class="movie-details">
+                <h2>Narivetta</h2>
+                <a href="https://timesofindia.indiatimes.com/topic/Rajinikanth" target="_blank">priyamvada krishnan</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Shruti-Haasan" target="_blank">Tovino Thomas</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Shruti-Haasan" target="_blank">Suraj Venjaramoodu</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Nagarjuna-Akkineni" target="_blank">Cheran</a>
+                <p class="con">Critic's Rating: ⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Avg. Users' Rating:⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Malayalam</p>
+                <p class="con">Crime, Drama, Thriller | UA</p>
+                <p class="con">23 May 2025 | 2 hrs 19 mins</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <a href="https://www.youtube.com/results?search_query=odum+kuthira+chadum+kuthira+trailer" target="_blank"><img src="mal12.png"  alt="Movie Poster" title="Lovely"></a>
+            <div class="movie-details">
+                <h2>Lovely</h2>
+                <a href="https://timesofindia.indiatimes.com/topic/Yogi-Babu" target="_blank">Mathew Thomas</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Devayani" target="_blank">unnimaya prasad</a>
+                <a href="https://timesofindia.indiatimes.com/topic/R.-Sarathkumar" target="_blank">Manoj K. Jayan</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Siddharth" target="_blank">Baburaj</a>
+                <p class="con">Critic's Rating: ⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Avg. Users' Rating:⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Malayalam</p>
+                <p class="con">Comedy, Fantasy | UA</p>
+                <p class="con">16 May 2025 | 1 hr 56 mins</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <a href="https://www.youtube.com/results?search_query=odum+kuthira+chadum+kuthira+trailer" target="_blank"><img src="mal13.png"  alt="Movie Poster" title="Vyasana Sametham Bandhu Mithradhikal"></a>
+            <div class="movie-details">
+                <h2>Vyasana Sametham Bandhu Mithradhikal</h2>
+                <a href="https://timesofindia.indiatimes.com/topic/saanve-megghana" target="_blank">Anaswara Rajan,</a>
+                <a href="https://timesofindia.indiatimes.com/topic/manikandan-k." target="_blank">mallika sukumaran</a>
+                <a href="https://timesofindia.indiatimes.com/topic/R.-Sundarrajan" target="_blank">Baiju Santhosh</a>
+                <a href="https://timesofindia.indiatimes.com/topic/Guru-Somasundaram" target="_blank">Noby Marcose</a>
+                <p class="con">Critic's Rating: ⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Avg. Users' Rating:⭐⭐⭐☆☆ 3.0</p>
+                <p class="con">Malayalam</p>
+                <p class="con">Comedy, Drama | U</p>
+                <p class="con">13 Jun 2025 | 1 hr 56 mins</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
