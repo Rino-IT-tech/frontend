@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(209, 239, 239);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20240102/pngtree-background-of-a-wooden-table-with-texture-image_13856792.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        h1{
+            text-align: center;
+        }
+        .table-container{
+           align-items: center;
+            background-color: rgba(54, 53, 53, 0.847);
+             padding: 20px;
+             border-radius: 20px;
+             box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.3);
+
+        }
+        .ac-btn{
+            padding:10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: darkgray;
+            font-weight: bold;
+            font-size: 17px;
+            
+        }
+        td{
+            padding: 0px 10px 10px ;
+        }
+        .del{
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: darkgray;
+            font-weight: bold;
+        }
+        .ac{
+            padding: 10px 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: darkgray;
+            font-weight: bold;
+        }
+        .input-box{
+            width: 270px;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            text-align:right;
+             font-size: 18px;
+            text-align: right;
+
+        }
+        .equal{
+            padding: 10px 20px 0px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: darkgrey;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .zero{
+            padding: 10px 10px;
+            border-radius: 10px;
+            border: none;
+            transition: all 0.2s ease;
+            background-color:darkgrey;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .zero:hover{
+            box-shadow: 0 0 20px #f5c3ee;
+            transform: scale(1.05);
+            
+        }
+        .ac-btn:hover{
+             box-shadow: 0 0 20px #24aed1;
+            transform: scale(1.05);
+        }
+        .equal:hover{
+            box-shadow: 0 0 20px #24aed1;
+            transform: scale(1.05);
+        }
+        .ac:hover{
+            box-shadow: 0 0 20px #24aed1;
+            transform: scale(1.05);
+        }
+        .del:hover{
+            box-shadow: 0 0 20px #24aed1;
+            transform: scale(1.05);
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="table-containers">
+        <div class="table-container">
+        <input type="text" class="input-box" id="result"  readonly>
+        <table> 
+            <tr>
+                <td><button class="del" onclick="removeall()">AC</button></td>
+                <td><button class="ac" onclick="deleteall()">DEL</button></td>
+                <td><button class="ac-btn" onclick="appent('/')">/</button></td>
+                <td><button class="ac-btn" onclick="appent('*')">*</button></td>
+            </tr>
+            <br>
+            <tr>
+                <td><button class="ac-btn" onclick="appent('7')">7</button></td>
+                <td><button class="ac-btn" onclick="appent('8')">8</button></td>
+                <td><button class="ac-btn" onclick="appent('9')">9</button></td>
+                <td><button class="ac-btn" onclick="appent('-')">-</button></td>
+            </tr>
+            <br>
+             <tr>
+                <td><button class="ac-btn" onclick="appent('6')">6</button></td>
+                <td><button class="ac-btn" onclick="appent('5')">5</button></td>
+                <td><button class="ac-btn" onclick="appent('4')">4</button></td>
+                <td><button class="ac-btn" onclick="appent('+')">+</button></td>
+            </tr>
+            <br>
+            <tr>
+                <td><button class="ac-btn" onclick="appent('1')">1</button></td>
+                <td><button class="ac-btn" onclick="appent('2')">2</button></td>
+                <td><button class="ac-btn" onclick="appent('3')">3</button></td>
+                <td rowspan="2"><button class="equal" onclick="equal()" style="height: 80px;">=</button></td>
+
+            </tr>
+            <TR>
+                <td colspan="2"><button class="zero" style="width:110px;" onclick="appent('0')">0</button></td>
+                <td><button class="ac-btn" onclick="appent('.')">.</button></td>
+            </TR>
+            <br>
+        </table>
+        </div>
+    </div>
+    <script>
+        function appent(val){
+            document.getElementById("result").value += val ;
+        }
+        function removeall(){
+            document.getElementById("result").value = "" ;
+        }
+        function deleteall() {
+            let current = document.getElementById("result").value ;
+            document.getElementById("result").value  = current.slice(0,-1);
+        }
+        function equal() {
+            document.getElementById("result").value = eval(document.getElementById("result").value);
+        }
+
+
+    </script>
+
+</body>
+</html>
